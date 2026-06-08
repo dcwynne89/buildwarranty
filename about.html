@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <title>About — BuildWarranty</title>
+  <meta name="description" content="BuildWarranty is a free warranty certificate generator for contractors, manufacturers, and service providers. Learn about our mission to make warranty documentation simple.">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6010936774105671" crossorigin="anonymous"></script>
+  <style>.page-container { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; } .page-container h1 { font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #fff, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; } .page-container h2 { font-size: 1.2rem; color: var(--accent-hover); margin: 2rem 0 0.75rem; } .page-container p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; } .page-container a { color: var(--accent-hover); }</style>
+</head>
+<body>
+  <nav class="navbar"><a href="/" class="navbar-brand">🛡️ BuildWarranty</a><div class="navbar-links" id="siteNav"><a href="/">Generator</a><a href="/about.html" style="color:var(--accent)">About</a></div><button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="page-container">
+    <h1>About BuildWarranty</h1>
+
+    <p>I built BuildWarranty because too many contractors and service providers make warranty promises verbally — and then have nothing to show for it when a client calls back a year later. "You said it was guaranteed" turns into a he-said-she-said situation that erodes trust and costs money.</p>
+
+    <p>The solution is simple: put it in writing. But most people don't because creating a warranty document feels like it requires a lawyer or expensive software. It doesn't. You need a form and a PDF.</p>
+
+    <h2>What I Actually Built</h2>
+    <p>A form on the left, a live warranty certificate preview on the right. Enter your business details, the client info, warranty type, duration, coverage, exclusions, and claim process — then download a clean PDF with dual signature lines. The expiration date auto-calculates from your start date and duration. Done in under two minutes.</p>
+
+    <p>The preview updates as you type, so you can see exactly what your client will receive before downloading. The PDF is generated server-side so it looks identical in every PDF reader on every device.</p>
+
+    <h2>Who It's For</h2>
+    <p>Roofers, HVAC technicians, electricians, plumbers, appliance installers, general contractors, manufacturers, auto mechanics — anyone who stands behind their work and wants to prove it. If you finish a job and your client asks "do I get a warranty?", this tool exists so your answer is always "already in your inbox."</p>
+
+    <h2>Privacy</h2>
+    <p>Your warranty data isn't stored anywhere. The PDF is generated, returned in the HTTP response, and that's it. Nothing is written to a database. Nothing is logged beyond basic request metrics. Your clients' details stay between you and them.</p>
+
+    <h2>Part of the Build Ecosystem</h2>
+    <p>BuildWarranty is part of a growing set of tools for independent workers: <a href="https://buildinvoice.co" target="_blank" rel="noopener">BuildInvoice</a>, <a href="https://buildreceipt.co" target="_blank" rel="noopener">BuildReceipt</a>, <a href="https://buildquotes.co" target="_blank" rel="noopener">BuildQuotes</a>, <a href="https://buildchangeorder.co" target="_blank" rel="noopener">BuildChangeOrder</a>, <a href="https://buildpdf.co" target="_blank" rel="noopener">BuildPDF</a>, and <a href="https://buildcertificates.com" target="_blank" rel="noopener">BuildCertificates</a>. Same philosophy across all of them: tools that do one thing well, no login required.</p>
+
+    <h2>Contact</h2>
+    <p>Questions, bugs, or feature requests? <a href="mailto:buildpdf.help@gmail.com">buildpdf.help@gmail.com</a></p>
+  </div>
+  <footer class="site-footer"><p>© 2026 BuildWarranty · <a href="/">Generator</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p></footer>
+<script>
+    const navToggle = document.getElementById('navToggle');
+    const siteNav = document.getElementById('siteNav');
+    const headerInner = navToggle ? navToggle.closest('.navbar') : null;
+    function closeNav() {
+      siteNav.classList.remove('open'); navToggle.classList.remove('open');
+      document.body.style.overflow = '';
+      const btn = siteNav.querySelector('.nav-close'); if (btn) btn.remove();
+      setTimeout(() => headerInner.appendChild(siteNav), 300);
+    }
+    if (navToggle && siteNav && headerInner) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.contains('open');
+        if (!isOpen) {
+          document.body.appendChild(siteNav);
+          const closeBtn = document.createElement('button');
+          closeBtn.className = 'nav-close';
+          closeBtn.setAttribute('aria-label', 'Close menu');
+          closeBtn.innerHTML = '&#x2715;';
+          closeBtn.addEventListener('click', closeNav);
+          siteNav.prepend(closeBtn);
+          requestAnimationFrame(() => { siteNav.classList.add('open'); navToggle.classList.add('open'); });
+          document.body.style.overflow = 'hidden';
+        } else { closeNav(); }
+      });
+      siteNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+    }
+  </script>
+</body>
+</html>

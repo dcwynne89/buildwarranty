@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <title>BuildWarranty — Free Warranty Certificate Generator | Create PDF Warranties Online</title>
+  <meta name="description" content="Generate professional PDF warranty certificates for free. Specify coverage, duration, exclusions, and terms. Perfect for contractors and manufacturers. No signup required. Optionally sign in to save your work.">
+  <meta name="keywords" content="free warranty generator, warranty certificate maker, warranty template, PDF warranty, product warranty, service warranty, workmanship warranty, contractor warranty">
+  <link rel="canonical" href="https://buildwarranty.co/">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6010936774105671" crossorigin="anonymous"></script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="BuildWarranty — Free Warranty Certificate Generator">
+  <meta property="og:description" content="Generate professional PDF warranty certificates instantly. No signup required.">
+  <meta property="og:url" content="https://buildwarranty.co/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://buildwarranty.co/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BuildWarranty — Free Warranty Certificate Generator">
+  <meta name="twitter:description" content="Generate professional PDF warranty certificates instantly. No signup required.">
+  <meta name="twitter:image" content="https://buildwarranty.co/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "BuildWarranty",
+    "url": "https://buildwarranty.co",
+    "description": "Free online warranty certificate generator. Create and download professional PDF warranty documents instantly.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "BuildWarranty",
+      "url": "https://buildwarranty.co"
+    }
+  }
+  </script>
+  <script src="/build-ecosystem-bar.js" defer></script>
+  <script src="/build-ecosystem-auth.js" defer></script>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="navbar-brand">🛡️ BuildWarranty</a>
+    <div class="navbar-links" id="siteNav">
+      <a href="/about.html">About</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero-banner">
+    <h1>Back Your Work With a Document That Proves It</h1>
+    <p>Verbal warranties are forgotten. Written ones are evidence. Generate a professional warranty certificate that protects both you and your client — with your branding, coverage details, and terms clearly stated.</p>
+  </section>
+
+  <!-- ── Main App ── -->
+  <main class="app-container">
+
+    <!-- ── FORM PANEL ── -->
+    <div class="form-panel" id="formPanel">
+
+      <!-- 📋 Your Information -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>📋 Your Information</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fromName">Business / Your Name *</label>
+              <input type="text" id="fromName" placeholder="Acme Roofing Co." required>
+            </div>
+            <div class="form-group">
+              <label for="fromEmail">Email</label>
+              <input type="email" id="fromEmail" placeholder="info@acmeroofing.com">
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="fromStreet">Street Address</label>
+              <input type="text" id="fromStreet" placeholder="123 Main St">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fromCity">City</label>
+              <input type="text" id="fromCity" placeholder="Austin">
+            </div>
+            <div class="form-group">
+              <label for="fromState">State / ZIP</label>
+              <input type="text" id="fromState" placeholder="TX 78701">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fromPhone">Phone</label>
+              <input type="tel" id="fromPhone" placeholder="(555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="accentColor">Accent Color</label>
+              <div class="color-row">
+                <input type="color" id="accentColor" value="#d97706">
+                <input type="text" id="accentColorHex" value="#d97706" style="flex:1" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 👤 Warranty Holder -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>👤 Warranty Holder</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="toName">Client Name *</label>
+              <input type="text" id="toName" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="toEmail">Client Email</label>
+              <input type="email" id="toEmail" placeholder="jane@client.com">
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="toStreet">Street Address</label>
+              <input type="text" id="toStreet" placeholder="456 Oak Ave">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="toCity">City</label>
+              <input type="text" id="toCity" placeholder="Denver">
+            </div>
+            <div class="form-group">
+              <label for="toState">State / ZIP</label>
+              <input type="text" id="toState" placeholder="CO 80202">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🛡️ Warranty Details -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>🛡️ Warranty Details</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="warrantyNumber">Warranty Number</label>
+              <input type="text" id="warrantyNumber" placeholder="WRT-001" value="WRT-001">
+            </div>
+            <div class="form-group">
+              <label for="warrantyDate">Warranty Date</label>
+              <input type="date" id="warrantyDate">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="warrantyType">Warranty Type</label>
+              <select id="warrantyType">
+                <option value="workmanship">Workmanship</option>
+                <option value="materials">Materials</option>
+                <option value="parts_and_labor" selected>Parts & Labor</option>
+                <option value="comprehensive">Comprehensive</option>
+                <option value="limited">Limited</option>
+                <option value="extended">Extended</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="transferable">Transferable?</label>
+              <select id="transferable">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Duration</label>
+              <div class="duration-row">
+                <input type="number" id="duration" placeholder="2" value="2" min="1" step="1">
+                <select id="durationUnit">
+                  <option value="years" selected>Years</option>
+                  <option value="months">Months</option>
+                  <option value="days">Days</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="expirationDate">Expiration Date</label>
+              <input type="date" id="expirationDate">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 📝 Coverage Details -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>📝 Coverage Details</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="projectDescription">Project Description</label>
+              <textarea id="projectDescription" rows="2" placeholder="What was installed, repaired, or built"></textarea>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="coverageDescription">What This Warranty Covers</label>
+              <textarea id="coverageDescription" rows="3" placeholder="Describe what is covered under this warranty"></textarea>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="exclusions">Exclusions (What Is NOT Covered)</label>
+              <textarea id="exclusions" rows="3" placeholder="List any exclusions or limitations"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 💰 Claim Process -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>💰 Claim Process</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="claimProcess">How to File a Warranty Claim</label>
+              <textarea id="claimProcess" rows="3" placeholder="Describe the process for filing a warranty claim"></textarea>
+            </div>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="contactInfo">Warranty Service Contact</label>
+              <textarea id="contactInfo" rows="2" placeholder="Contact details for warranty service requests"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 📝 Terms & Conditions -->
+      <div class="form-section">
+        <div class="form-section-header">
+          <h3>📝 Terms & Conditions</h3>
+        </div>
+        <div class="form-body">
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="terms">Additional Terms & Conditions</label>
+              <textarea id="terms" rows="3" placeholder="Any additional warranty terms, conditions, or legal language"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download -->
+      <div style="display:flex;gap:0.75rem;">
+        <button type="button" class="btn-download" id="btnDownload" style="flex:1;">
+          ⬇ Download Warranty PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- ── PREVIEW PANEL ── -->
+    <div class="preview-panel" id="previewPanel">
+      <div class="preview-header">
+        <h3>🛡️ Live Preview</h3>
+        <span class="preview-badge">Updates as you type</span>
+      </div>
+      <div class="preview-body" id="previewBody">
+        <!-- Live warranty certificate rendered here by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ── Toast ── -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ── SEO Cards ── -->
+  <section style="max-width:900px;margin:0 auto;padding:2.5rem 2rem 0;">
+    <h2 style="font-size:1.3rem;font-weight:800;background:linear-gradient(135deg,#fff,#d97706);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:0.75rem;">Why Use BuildWarranty?</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-bottom:2rem;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">🛡️ Professional Warranty Certificates</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">No more handwritten warranty promises. Generate a clean, professional PDF warranty certificate with your branding, coverage details, duration, and terms — all in under two minutes.</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">⏱️ Auto-Calculated Expiration</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">Set the warranty start date and duration — the expiration date calculates automatically. No math, no mistakes. Supports years, months, or days for any warranty period.</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">📋 Coverage & Exclusions Built In</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">Clearly define what's covered and what's not. Separate fields for coverage, exclusions, claim process, and terms ensure nothing gets overlooked or left ambiguous.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pro Tips ── -->
+  <section style="max-width:900px;margin:0 auto;padding:1rem 2rem 0;">
+    <h2 style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);margin-bottom:1.25rem;">📌 Warranty Tips That Actually Make a Difference</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">Always put your warranty in writing</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">A verbal warranty is only as good as the memory behind it. Written warranties create a clear record for both parties. If a claim arises two years later, the document speaks for itself.</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">Be specific about exclusions</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">Vague warranties lead to disputes. "Normal wear and tear" is not specific enough. List exactly what isn't covered: neglect, unauthorized modifications, acts of God, misuse. Clarity now prevents arguments later.</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">Include a clear claim process</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">Tell your client exactly how to file a claim: who to contact, what information to provide, and what timeline to expect. A smooth claim process is the difference between a happy repeat client and a one-star review.</p>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.25rem;">
+        <p style="font-size:0.82rem;font-weight:700;color:var(--text-primary);margin-bottom:0.35rem;">Use sequential warranty numbers</p>
+        <p style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;">WRT-001, WRT-002, WRT-003. Sequential numbering makes it easy to track warranties, reference specific jobs, and look professional. It also helps if you ever need to cross-reference with invoices or contracts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div style="max-width:860px;margin:0 auto 1.25rem;padding:0 1.5rem;">
+      <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:0.6rem;">Also from the Build ecosystem</p>
+      <div style="display:flex;flex-wrap:wrap;gap:0.75rem;">
+        <a href="https://buildinvoice.co" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">⚡ <strong style="color:var(--text-primary);">BuildInvoice</strong> — Free invoice generator</a>
+        <a href="https://buildreceipt.co" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">🧾 <strong style="color:var(--text-primary);">BuildReceipt</strong> — Free receipt generator</a>
+        <a href="https://buildcertificates.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">🏅 <strong style="color:var(--text-primary);">BuildCertificates</strong> — Free certificate generator</a>
+        <a href="https://buildquotes.co" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">💼 <strong style="color:var(--text-primary);">BuildQuotes</strong> — Free price quote generator</a>
+        <a href="https://buildchangeorder.co" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.35rem 0.85rem;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;font-size:0.8rem;color:var(--text-secondary);text-decoration:none;">📋 <strong style="color:var(--text-primary);">BuildChangeOrder</strong> — Free change order generator</a>
+      </div>
+    </div>
+    <p>© 2026 BuildWarranty · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+  </footer>
+
+  <script src="warranty-app.js"></script>
+  <script src="warranty-save-integration.js" defer></script>
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const siteNav = document.getElementById('siteNav');
+    const headerInner = navToggle ? navToggle.closest('.navbar') : null;
+    function closeNav() {
+      siteNav.classList.remove('open'); navToggle.classList.remove('open');
+      document.body.style.overflow = '';
+      const btn = siteNav.querySelector('.nav-close'); if (btn) btn.remove();
+      setTimeout(() => headerInner.appendChild(siteNav), 300);
+    }
+    if (navToggle && siteNav && headerInner) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = siteNav.classList.contains('open');
+        if (!isOpen) {
+          document.body.appendChild(siteNav);
+          const closeBtn = document.createElement('button');
+          closeBtn.className = 'nav-close';
+          closeBtn.setAttribute('aria-label', 'Close menu');
+          closeBtn.innerHTML = '&#x2715;';
+          closeBtn.addEventListener('click', closeNav);
+          siteNav.prepend(closeBtn);
+          requestAnimationFrame(() => { siteNav.classList.add('open'); navToggle.classList.add('open'); });
+          document.body.style.overflow = 'hidden';
+        } else { closeNav(); }
+      });
+      siteNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+    }
+  </script>
+</body>
+</html>
